@@ -1,0 +1,1337 @@
+.parent-signup
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(240, 240, 247);
+    opacity: 0.8;
+    background-image: linear-gradient(rgba(74, 99, 245, 0.7) 0% , rgba(57, 25, 199, 0.7) 100% ),url('ImagesSignup/pic1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parent-signup .parent-signup-child
+{
+    background-image: url('ImagesSignup/amazing-aerial-shot-singapore-cityscape-with-lots-skyscrapers.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    width: 1180px;
+    height: 41rem;
+    opacity: 1;
+}
+.parent-signup .parent-signup-child form
+{
+    position: absolute;
+    left: 20%;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid gray;
+}
+.parent-signup .parent-signup-child form h1
+{
+    font-size: 24px;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 50%;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    height: 100%;
+}
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+ 
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 18px;
+    color: #000000;
+    position: relative;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+    background-color: transparent;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 18px;
+    color: #000000;
+    position: relative;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+    background-color: transparent;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 390px;
+    height: 130px;
+    background-color: rgb(192, 190, 190);
+    position: relative;
+    border-radius: 20px;
+    border: 3px dashed gray;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch input,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch input
+{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #161D6F;
+    font-size: 13px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    position: absolute;
+    top: 70%;
+    right: 13%;
+    font-size: 13px;
+    color: #161D6F;
+}
+.com1 .com1-ch img
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 2%;
+}
+.com2 .com2-ch img
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 37%;
+    left: 2%;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 390px;
+    background-color: #1EE3CF;
+    color: #0A0E3F;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+
+.div3
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 498px;
+    margin-top: 20px;
+}
+.div3 .go
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    color: #000000;
+    border: 1px solid gray;
+}
+.div3 .ap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    color: white;
+}
+.div3 .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #1877F2;
+    color: white;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 35px;
+    height: 35px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 22px;
+}
+
+
+.i1,
+.i2,
+.i3,
+.i4,
+.i5
+{
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.i1 input,
+.i2 input,
+.i3 input,
+.i4 input,
+.i5 input
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 22px;
+    border: 1px solid #838282;
+    padding-left: 20px;
+}
+.i1 label,
+.i2 label,
+.i3 label,
+.i4 label,
+.i5 label
+{
+  position: relative;
+  right: 20px;
+  top: 8px;
+  background-color: white;
+}
+.acc
+{
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+@media(max-width:567px)
+{
+    .parent-signup
+    {
+        height: 770px;
+    }
+  
+    .parent-signup .parent-signup-child
+    {
+        width: 94%;
+        height: 98%;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 0;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding: 30px 10px;
+    }
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 47px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 95%;
+        height: 54px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 8px;
+      font-size: 12px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs h1
+{
+    font-size: 16px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+    align-items: center;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 7%;
+    font-size: 8px;
+}
+.com1 .com1-ch img
+{
+   display: none;
+}
+.com2 .com2-ch img
+{
+   display: none;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(180deg);
+    gap: 18px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 100%;
+    transform: rotate(180deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1{
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.parent-signup .parent-signup-child form .parent-childs .child1 button
+{
+    height: 40px;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+        
+.div3
+{
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    gap: 3px;
+}
+.div3 .go
+{
+    gap: 6px;
+    width: 120px;
+    height: 38px;
+}
+.div3 .ap
+{
+    gap: 6px;
+    width: 120px;
+    height: 38px;
+}
+.div3 .face
+{
+    gap: 6px;
+    width: 120px;
+    height: 38px;
+}
+ .div3 .go img,
+ .div3 .ap img,
+ .div3 .face img
+{
+    width: 22px;
+    height: 22px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 17px;
+}
+}
+@media(min-width:567px)
+{
+    .parent-signup{
+        height: 770px;
+    }
+    .parent-signup .parent-signup-child
+    {
+        width: 80%;
+        height: 98%;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 0;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+    .parent-signup .parent-signup-child form .parent-childs .child1 button
+    {
+        height: 40px;
+        width: 80%;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 20px;
+    }
+     
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 47px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 95%;
+        height: 54px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 8px;
+      font-size: 12px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs h1
+{
+    font-size: 16px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 7%;
+    font-size: 8px;
+}
+.com1 .com1-ch img
+{
+   display: none;
+}
+.com2 .com2-ch img
+{
+   display: none;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    transform: rotate(180deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 100%;
+    transform: rotate(180deg);
+}
+.div3
+{
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+}
+.div3 .go
+{
+    gap: 6px;
+    width: 120px;
+    height: 40px;
+}
+.div3 .ap
+{
+    gap: 6px;
+    width: 120px;
+    height: 40px;
+}
+.div3 .face
+{
+    gap: 6px;
+    width: 120px;
+    height: 40px;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 27px;
+    height: 27px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 17px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1{
+    gap: 6px;
+    align-items: flex-end;
+}
+}
+@media(min-width:768px)
+{
+    .parent-signup{
+        height: 770px;
+    }
+    .parent-signup .parent-signup-child
+    {
+        width: 70%;
+        height: 98%;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 0;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+    .parent-signup .parent-signup-child form .parent-childs .child1 button
+    {
+      height: 35px;
+      width: 300px;
+      font-size: 18px;
+    }
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 52px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 90%;
+        height: 60px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 6px;
+      font-size: 14px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 14px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs h1
+{
+    font-size: 16px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 8px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 7%;
+    font-size: 8px;
+}
+.com1 .com1-ch img
+{
+   display: none;
+}
+.com2 .com2-ch img
+{
+   display: none;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(180deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 100%;
+    transform: rotate(180deg);
+}
+.div3
+{
+    justify-content: space-between;
+    flex-direction: row;
+    width: 450px;
+    height: 60px;
+}
+.div3 .go
+{
+    gap: 6px;
+    width: 130px;
+    height: 50px;
+}
+.div3 .ap
+{
+    gap: 6px;
+    width: 130px;
+    height: 50px;
+}
+.div3 .face
+{
+    gap: 6px;
+    width: 130px;
+    height: 50px;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 27px;
+    height: 27px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 17px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1{
+    gap: 6px;
+    align-items: flex-end;
+}
+}
+@media(min-width:992px)
+{
+    .parent-signup{
+        height: 100%;
+    }
+    .parent-signup .parent-signup-child
+    {
+        width: 92%;
+        height: 41rem;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 20%;
+        height: 100%;
+        width: 80%;
+        gap: 20px;
+        padding: 10px;
+    }
+            
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 80px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 94%;
+        height: 50px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 8px;
+      font-size: 18px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 340px;
+    height: 120px;
+}
+     .parent-signup .parent-signup-child form .parent-childs .child1 button
+    {
+      height: 40px;
+      width: 300px;
+      font-size: 20px;
+    }
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+   justify-content: center;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 8%;
+    font-size: 13px;
+}
+.com1 .com1-ch img
+{
+    width: 27px;
+    height: 27px;
+    top: 63%;
+    left: 13%;
+    display: block;
+}
+.com2 .com2-ch img
+{
+    width: 27px;
+    height: 27px;
+    top: 63%;
+    left: 13%;
+    display: block;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: rotate(0deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 50%;
+    transform: rotate(0deg);
+}
+.div3
+{
+    justify-content: space-between;
+    flex-direction: row;
+    width: 498px;
+    height: 60px;
+}
+.div3 .go
+{
+    gap: 6px;
+    width: 140px;
+    height: 50px;
+}
+.div3 .ap
+{
+    gap: 6px;
+    width: 140px;
+    height: 50px;
+}
+.div3 .face
+{
+    gap: 6px;
+    width: 140px;
+    height: 50px;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 30px;
+    height: 30px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 20px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1{
+    gap: 13px;
+    align-items: center;
+}
+
+}
+@media(min-width:1200px)
+{
+    .parent-signup{
+        height: 100%;
+    }
+    .parent-signup .parent-signup-child
+    {
+        width: 90%;
+        height: 41rem;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 20%;
+        height: 100%;
+        width: 80%;
+        gap: 20px;
+        padding: 10px;
+    }
+            
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 86px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 8px;
+      font-size: 20px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 390px;
+    height: 130px;
+}
+   .parent-signup .parent-signup-child form .parent-childs .child1 button
+    {
+    height: 50px;
+    width: 390px;
+    font-size: 22px;
+   }
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    justify-content: center;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 13%;
+    font-size: 13px;
+}
+.com1 .com1-ch img
+{
+    width: 30px;
+    height: 30px;
+    top: 37%;
+    left: 2%;
+    display: block;
+}
+.com2 .com2-ch img
+{
+    width: 30px;
+    height: 30px;
+    top: 37%;
+    left: 2%;
+    display: block;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: rotate(0deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    height: 100%;
+}
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 50%;
+    transform: rotate(0deg);
+}
+          
+.div3
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 498px;
+}
+.div3 .go
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    color: #000000;
+    border: 1px solid gray;
+}
+.div3 .ap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    color: white;
+}
+.div3 .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #1877F2;
+    color: white;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 35px;
+    height: 35px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 22px;
+}
+
+}
+@media(min-width:1400px)
+{
+    .parent-signup{
+        height: 100%;
+    }
+    .parent-signup .parent-signup-child
+    {
+        width: 1180px;
+        height: 41rem;
+    }
+    .parent-signup .parent-signup-child form
+    {
+        left: 20%;
+        height: 100%;
+        width: 80%;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5
+    {
+        width: 100%;
+        height: 86px;
+    }
+    .i1 input,
+    .i2 input,
+    .i3 input,
+    .i4 input,
+    .i5 input
+    {
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+    }
+    .i1 label,
+    .i2 label,
+    .i3 label,
+    .i4 label,
+    .i5 label
+    {
+      right: 20px;
+      top: 8px;
+       font-size: 21px;
+    }
+           
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .th-la1
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+    padding: 2px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .th-la2
+{
+    font-size: 18px;
+    right: 14px;
+    top: 7px;
+    z-index: 1;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch
+{
+    width: 390px;
+    height: 130px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 button
+{
+    height: 50px;
+    width: 390px;
+    font-size: 22px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3
+{
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    justify-content: center;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch p,
+.parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch p
+{
+    top: 70%;
+    right: 13%;
+    font-size: 13px;
+}
+.com1 .com1-ch img
+{
+    width: 30px;
+    height: 30px;
+    top: 37%;
+    left: 2%;
+    display: block;
+}
+.com2 .com2-ch img
+{
+    width: 30px;
+    height: 30px;
+    top: 37%;
+    left: 2%;
+    display: block;
+}
+.parent-signup .parent-signup-child form .parent-childs
+{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: rotate(0deg);
+}
+.parent-signup .parent-signup-child form .parent-childs .child1,
+.parent-signup .parent-signup-child form .parent-childs .child2
+{
+    width: 50%;
+    transform: rotate(0deg);
+}
+        
+.div3
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 498px;
+}
+.div3 .go
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    color: #000000;
+    border: 1px solid gray;
+}
+.div3 .ap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    color: white;
+}
+.div3 .face
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #1877F2;
+    color: white;
+}
+.div3 .go img,
+.div3 .ap img,
+.div3 .face img
+{
+    width: 35px;
+    height: 35px;
+}
+.div3 .go h2,
+.div3 .ap h2,
+.div3 .face h2
+{
+   font-size: 22px;
+}
+.parent-signup .parent-signup-child form .parent-childs .child1{
+    gap: 13px;
+    align-items: center;
+}
+
+}
+
+
+
+

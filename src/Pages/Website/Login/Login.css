@@ -1,0 +1,979 @@
+.parent-login
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(240, 240, 247);
+    background-image:linear-gradient(rgba(155, 168, 238, 0.7) 0% , rgba(57, 25, 199, 0.7) 100% ),url('ImagesLogin/pic1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inner-div
+{
+    background-image: url('ImagesLogin/photo_2024-05-15_19-37-54.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    width: 1080px;
+    height: 34rem;
+    opacity: 0;
+}
+.inner-div form
+{
+    position: absolute;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 17px;
+    background-color: white;
+    border: 2px solid gray;
+}
+.inner-div form h1
+{
+    width: 227px;
+    height: 41px;
+    font-size: 32px;
+    color: #0A0E3F;
+    text-align: center;
+}
+.inner-div2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 512px;
+    font-size: 18px;
+}
+.inner-div2 p
+{
+    color: #6B48FF;
+    font-size: 18px;
+}
+.inner-div3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 29px;
+}
+.inner-div3 span 
+{
+    width: 220px;
+    height: 1px;
+    background-color: #D9D9D9;
+}
+.inner-div3 p
+{
+    width: 21px;
+    height: 29px;
+    font-size: 22px;
+    color: #D9D9D9;
+}
+.inner-div4
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 498px;
+    height: 60px;
+}
+.inner-div4 .google
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: white;
+    width: 150px;
+    height: 60px;
+    color: #000000;
+    border: 1px solid gray;
+}
+.inner-div4 .apple
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    color: white;
+}
+.inner-div4 .facebook
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: #1877F2;
+    color: white;
+}
+.inner-div4 .google img,
+.inner-div4 .apple img,
+.inner-div4 .facebook img
+{
+    width: 35px;
+    height: 35px;
+}
+.inner-div4 .google h2,
+.inner-div4 .apple h2,
+.inner-div4 .facebook h2
+{
+   font-size: 22px;
+}
+
+.in1,
+.in2
+{
+    width: 550px;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.in1 input,
+.in2 input
+{
+    width: 550px;
+    height: 60px;
+    border-radius: 22px;
+    border: 1px solid #838282;
+    padding-left: 20px;
+}
+.in1 label,
+.in2 label
+{
+  position: relative;
+  right: 20px;
+  top: 8px;
+  background-color: white;
+}
+.inner-div form button
+{
+    width: 550px;
+    height: 60px;
+    border-radius: 22px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EE3CF;
+    color: #0A0E3F;
+}
+
+@media(max-width:567px)
+{
+    .parent-login .inner-div
+    {
+        position: relative;
+        width: 86%;
+        height: 37rem;
+        opacity: 1;
+    }
+    .in1 label,
+    .in2 label
+    {
+        font-size: 13px;
+    }
+    .parent-login .inner-div form
+    {
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding: 17px 8px;
+    }
+   .parent-login .inner-div form h1
+    {
+        width: 200px;
+        height: 31px;
+        font-size: 20px;
+    }
+
+
+    .parent-login .inner-div form .inner-div2
+    {
+        width: 100%;
+        height: 22px;
+        font-size: 14px;
+    }
+    .parent-login .inner-div form .inner-div2 p
+    {
+        color: #6B48FF;
+        font-size: 17px;
+    }
+    .parent-login .inner-div form .inner-div3
+    {
+        width: 100%;
+        height: 29px;
+    }
+    .parent-login .inner-div form .inner-div3 span 
+    {
+        width: 220px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div3 p
+    {
+        width: 21px;
+        height: 29px;
+        font-size: 17px;
+        color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div4
+    {
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        height: 140px;
+    }
+    .parent-login .inner-div form .inner-div4 .google
+    {
+        gap: 6px;
+        width: 120px;
+        height: 40px;
+    }
+    .parent-login .inner-div form .inner-div4 .apple
+    {
+        gap: 6px;
+        width: 120px;
+        height: 40px;
+    }
+    .parent-login .inner-div form .inner-div4 .facebook
+    {
+        gap: 6px;
+        width: 120px;
+        height: 40px;
+    }
+    .parent-login .inner-div form .inner-div4 .google img,
+    .parent-login .inner-div form .inner-div4 .apple img,
+    .parent-login .inner-div form .inner-div4 .facebook img
+    {
+        width: 22px;
+        height: 22px;
+    }
+    .parent-login .inner-div form .inner-div4 .google h2,
+    .parent-login .inner-div form .inner-div4 .apple h2,
+    .parent-login .inner-div form .inner-div4 .facebook h2
+    {
+       font-size: 17px;
+    }
+    
+    .parent-login .inner-div form .in1,
+    .parent-login .inner-div form .in2
+    {
+        width: 100%;
+        height: 80px;
+    }
+    .parent-login .inner-div form .in1 input,
+    .parent-login .inner-div form .in2 input
+    {
+        width: 100%;
+        height: 40px;
+    }
+    .parent-login .inner-div form button
+    {
+        width: 90%;
+        height: 40px;
+        font-size: 19px;
+    }
+    .inner-div2
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 90%;
+        font-size: 18px;
+        padding-right: 20px;
+        gap: 7px;
+    }
+    .inner-div2 p
+    {
+        font-size: 14px;
+    }
+    .inner-div2 p .rou
+    {
+        font-size: 13px;
+    }
+
+
+}
+@media(min-width:567px)
+{
+            
+      .parent-login .inner-div
+      {
+          position: relative;
+          width: 60%;
+          height: 37rem;
+          opacity: 1;
+      }
+      .parent-login .inner-div form
+      {
+          left: 0%;
+          height: 100%;
+          width: 100%;
+          gap: 20px;
+          padding: 17px 17px;
+      }
+     .parent-login .inner-div form h1
+      {
+          width: 200px;
+          height: 31px;
+          font-size: 20px;
+      }
+            
+            
+                        
+      .parent-login .inner-div form .inner-div2
+      {
+          width: 287px;
+          height: 22px;
+          font-size: 17px;
+      }
+      .parent-login .inner-div form .inner-div2 p
+      {
+          color: #6B48FF;
+          font-size: 17px;
+      }
+      .parent-login .inner-div form .inner-div3
+      {
+          width: 275px;
+          height: 29px;
+      }
+      .parent-login .inner-div form .inner-div3 span 
+      {
+          width: 220px;
+          height: 1px;
+          background-color: #D9D9D9;
+      }
+      .parent-login .inner-div form .inner-div3 p
+      {
+          width: 21px;
+          height: 29px;
+          font-size: 17px;
+          color: #D9D9D9;
+      }
+      .parent-login .inner-div form .inner-div4
+      {
+          justify-content: space-between;
+          flex-direction: column;
+          width: 100%;
+          height: 140px;
+      }
+      .parent-login .inner-div form .inner-div4 .google
+      {
+          gap: 6px;
+          width: 120px;
+          height: 40px;
+      }
+      .parent-login .inner-div form .inner-div4 .apple
+      {
+          gap: 6px;
+          width: 120px;
+          height: 40px;
+      }
+      .parent-login .inner-div form .inner-div4 .facebook
+      {
+          gap: 6px;
+          width: 120px;
+          height: 40px;
+      }
+      .parent-login .inner-div form .inner-div4 .google img,
+      .parent-login .inner-div form .inner-div4 .apple img,
+      .parent-login .inner-div form .inner-div4 .facebook img
+      {
+          width: 27px;
+          height: 27px;
+      }
+      .parent-login .inner-div form .inner-div4 .google h2,
+      .parent-login .inner-div form .inner-div4 .apple h2,
+      .parent-login .inner-div form .inner-div4 .facebook h2
+      {
+         font-size: 17px;
+      }
+      
+      .parent-login .inner-div form .in1,
+      .parent-login .inner-div form .in2
+      {
+          width: 100%;
+          height: 80px;
+      }
+      .parent-login .inner-div form .in1 input,
+      .parent-login .inner-div form .in2 input
+      {
+          width: 100%;
+          height: 40px;
+      }
+      .parent-login .inner-div form button
+      {
+        width: 90%;
+        height: 40px;
+        font-size: 19px;
+      }
+      .inner-div2
+      {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          flex-direction: column;
+          width: 512px;
+          font-size: 18px;
+      }
+      .inner-div2 p
+      {
+          font-size: 18px;
+      }
+      .inner-div2 p .rou
+      {
+          font-size: 13px;
+      }
+         
+}
+@media(min-width:768px)
+{
+    .parent-login .inner-div
+    {
+        position: relative;
+        width: 600px;
+        height: 34rem;
+        opacity: 1;
+    }
+    .parent-login .inner-div form
+    {
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+        padding: 17px;
+    }
+   .parent-login .inner-div form h1
+    {
+        width: 200px;
+        height: 41px;
+        font-size: 24px;
+    }
+           
+                
+    .parent-login .inner-div form .inner-div2
+    {
+        width: 412px;
+        height: 22px;
+        font-size: 17px;
+    }
+    .parent-login .inner-div form .inner-div2 p
+    {
+        color: #6B48FF;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div3
+    {
+        width: 400px;
+        height: 29px;
+    }
+    .parent-login .inner-div form .inner-div3 span 
+    {
+        width: 220px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div3 p
+    {
+        width: 21px;
+        height: 29px;
+        font-size: 17px;
+        color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div4
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 450px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google
+    {
+        gap: 6px;
+        width: 130px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .apple
+    {
+        gap: 6px;
+        width: 130px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .facebook
+    {
+        gap: 6px;
+        width: 130px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .google img,
+    .parent-login .inner-div form .inner-div4 .apple img,
+    .parent-login .inner-div form .inner-div4 .facebook img
+    {
+        width: 27px;
+        height: 27px;
+    }
+    .parent-login .inner-div form .inner-div4 .google h2,
+    .parent-login .inner-div form .inner-div4 .apple h2,
+    .parent-login .inner-div form .inner-div4 .facebook h2
+    {
+       font-size: 17px;
+    }
+    
+    .parent-login .inner-div form .in1,
+    .parent-login .inner-div form .in2
+    {
+        width: 470px;
+        height: 105px;
+    }
+    .parent-login .inner-div form .in1 input,
+    .parent-login .inner-div form .in2 input
+    {
+        width: 470px;
+        height: 50px;
+    }
+    .parent-login .inner-div form button
+    {
+        width: 400px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .inner-div2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 512px;
+        font-size: 18px;
+    }
+    .inner-div2 p
+    {
+        font-size: 18px;
+    }
+    .inner-div2 p .rou
+    {
+        font-size: 13px;
+    }
+
+}
+@media(min-width:992px)
+{
+    .parent-login .inner-div
+    {
+        position: relative;
+        width: 960px;
+        height: 34rem;
+        opacity: 1;
+    }
+         
+    .parent-login .inner-div form
+    {
+        left: 40%;
+        height: 100%;
+        width: 60%;
+        gap: 20px;
+        padding: 17px;
+    }
+   .parent-login .inner-div form h1
+    {
+        width: 225px;
+        height: 41px;
+        font-size: 27px;
+    }
+            
+
+    .parent-login .inner-div form .inner-div2
+    {
+        width: 512px;
+        height: 22px;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div2 p
+    {
+        color: #6B48FF;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div3
+    {
+        width: 500px;
+        height: 29px;
+    }
+    .parent-login .inner-div form .inner-div3 span 
+    {
+        width: 220px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div3 p
+    {
+        width: 21px;
+        height: 29px;
+        font-size: 20px;
+        color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div4
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 498px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google
+    {
+        gap: 6px;
+        width: 140px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .apple
+    {
+        gap: 6px;
+        width: 140px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .facebook
+    {
+        gap: 6px;
+        width: 140px;
+        height: 50px;
+    }
+    .parent-login .inner-div form .inner-div4 .google img,
+    .parent-login .inner-div form .inner-div4 .apple img,
+    .parent-login .inner-div form .inner-div4 .facebook img
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .parent-login .inner-div form .inner-div4 .google h2,
+    .parent-login .inner-div form .inner-div4 .apple h2,
+    .parent-login .inner-div form .inner-div4 .facebook h2
+    {
+       font-size: 20px;
+    }
+    
+    .parent-login .inner-div form .in1,
+    .parent-login .inner-div form .in2
+    {
+        width: 500px;
+        height: 105px;
+    }
+    .parent-login .inner-div form .in1 input,
+    .parent-login .inner-div form .in2 input
+    {
+        width: 500px;
+        height: 60px;
+    }
+    .parent-login .inner-div form button
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .inner-div2
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 512px;
+        font-size: 18px;
+    }
+    .inner-div2 p
+    {
+        font-size: 18px;
+    }
+    .inner-div2 p .rou
+    {
+        font-size: 17px;
+    }
+
+}
+@media(min-width:1200px)
+{
+    .parent-login .inner-div
+    {
+        position: relative;
+        width: 1080px;
+        height: 34rem;
+        opacity: 1;
+    }
+    .parent-login .inner-div form
+    {
+        left: 40%;
+        height: 100%;
+        width: 60%;
+        gap: 20px;
+        padding: 17px;
+    }
+   .parent-login .inner-div form h1
+    {
+        width: 227px;
+        height: 41px;
+        font-size: 32px;
+    }
+          
+         
+    .parent-login .inner-div form .inner-div2
+    {
+        width: 512px;
+        height: 22px;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div2 p
+    {
+        color: #6B48FF;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div3
+    {
+        width: 550px;
+        height: 29px;
+    }
+    .parent-login .inner-div form .inner-div3 span 
+    {
+        width: 220px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div3 p
+    {
+        width: 21px;
+        height: 29px;
+        font-size: 22px;
+        color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div4
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 498px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .apple
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .facebook
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google img,
+    .parent-login .inner-div form .inner-div4 .apple img,
+    .parent-login .inner-div form .inner-div4 .facebook img
+    {
+        width: 35px;
+        height: 35px;
+    }
+    .parent-login .inner-div form .inner-div4 .google h2,
+    .parent-login .inner-div form .inner-div4 .apple h2,
+    .parent-login .inner-div form .inner-div4 .facebook h2
+    {
+       font-size: 22px;
+    }
+    
+    .parent-login .inner-div form .in1,
+    .parent-login .inner-div form .in2
+    {
+        width: 550px;
+        height: 105px;
+    }
+    .parent-login .inner-div form .in1 input,
+    .parent-login .inner-div form .in2 input
+    {
+        width: 550px;
+        height: 60px;
+    }
+    .parent-login .inner-div form button
+    {
+        width: 550px;
+        height: 60px;
+    }
+    .inner-div2
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 512px;
+        font-size: 18px;
+    }
+    .inner-div2 p
+    {
+        font-size: 18px;
+    }
+    .inner-div2 p .rou
+    {
+        font-size: 17px;
+    }
+
+}
+@media(min-width:1400px)
+{
+    .parent-login  .inner-div
+    {
+        position: relative;
+        width: 1080px;
+        height: 34rem;
+        opacity: 1;
+    }
+
+  .parent-login .inner-div form
+    {
+        left: 40%;
+        height: 100%;
+        width: 60%;
+        gap: 20px;
+        padding: 17px;
+    }
+   .parent-login .inner-div form h1
+    {
+        width: 227px;
+        height: 41px;
+        font-size: 32px;
+    }
+         
+
+
+
+    .parent-login .inner-div form .inner-div2
+    {
+        width: 512px;
+        height: 22px;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div2 p
+    {
+        color: #6B48FF;
+        font-size: 18px;
+    }
+    .parent-login .inner-div form .inner-div3
+    {
+        width: 550px;
+        height: 29px;
+    }
+    .parent-login .inner-div form .inner-div3 span 
+    {
+        width: 220px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div3 p
+    {
+        width: 21px;
+        height: 29px;
+        font-size: 22px;
+        color: #D9D9D9;
+    }
+    .parent-login .inner-div form .inner-div4
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        width: 498px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .apple
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .facebook
+    {
+        gap: 6px;
+        width: 150px;
+        height: 60px;
+    }
+    .parent-login .inner-div form .inner-div4 .google img,
+    .parent-login .inner-div form .inner-div4 .apple img,
+    .parent-login .inner-div form .inner-div4 .facebook img
+    {
+        width: 35px;
+        height: 35px;
+    }
+    .parent-login .inner-div form .inner-div4 .google h2,
+    .parent-login .inner-div form .inner-div4 .apple h2,
+    .parent-login .inner-div form .inner-div4 .facebook h2
+    {
+       font-size: 22px;
+    }
+    
+    .parent-login .inner-div form .in1,
+    .parent-login .inner-div form .in2
+    {
+        width: 550px;
+        height: 105px;
+    }
+    .parent-login .inner-div form .in1 input,
+    .parent-login .inner-div form .in2 input
+    {
+        width: 550px;
+        height: 60px;
+    }
+    .parent-login .inner-div form button
+    {
+        width: 550px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .inner-div2
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 512px;
+        font-size: 18px;
+    }
+    .inner-div2 p
+    {
+        font-size: 18px;
+    }
+    .inner-div2 p .rou
+    {
+        font-size: 17px;
+    }
+
+}

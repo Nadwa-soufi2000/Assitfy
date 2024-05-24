@@ -1,0 +1,266 @@
+.parent-logout
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-image:linear-gradient(rgba(155, 168, 238, 0.7) 0% , rgba(57, 25, 199, 0.7) 100% );
+}
+.parent-logout-child
+{
+    height: 24rem;
+    width: 900px;
+    position: relative;
+    border-radius: 20px;
+    background-image: url('ImagesLogout/photo_2024-05-15_19-37-54.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parent-logout-child form
+{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 30%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+}
+.parent-logout-child form h1
+{
+    font-size: 32px;
+    color: #0A0E3F;
+    text-align: center;
+}
+.parent-logout-child form .bt1
+{
+    width: 500px;
+    height: 60px;
+    border-radius: 22px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EE3CF;
+    color: #0A0E3F;
+}
+.parent-logout-child form .bt2
+{
+    width: 500px;
+    height: 60px;
+    border-radius: 22px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 234, 234);
+    color: #0A0E3F;
+    border: 2px solid rgb(202, 198, 198);
+}
+@media(max-width:576px)
+{
+    .parent-logout-child
+    {
+        height: 32rem;
+        width: 90%;
+    }
+    .parent-logout-child form
+    {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 18px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 80%;
+        height: 50px;
+        font-size: 17px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 80%;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+@media(min-width:576px)
+{
+    .parent-logout-child
+    {
+        height: 24rem;
+        width: 80%;
+    }
+    .parent-logout-child form
+    {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 20px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 80%;
+        height: 50px;
+        font-size: 17px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 80%;
+        height: 50px;
+        font-size: 17px;
+    }
+}
+@media(min-width:768px)
+{
+    .parent-logout-child
+    {
+        height: 24rem;
+        width: 70%;
+    }
+    .parent-logout-child form
+    {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 27px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 400px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 400px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+@media(min-width:992px)
+{
+    .parent-logout-child
+    {
+        height: 24rem;
+        width: 840px;
+    }
+    .parent-logout-child form
+    {
+        width: 70%;
+        height: 100%;
+        left: 30%;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 32px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+@media(min-width:1200px)
+{
+    .parent-logout-child
+    {
+        height: 24rem;
+        width: 900px;
+    }
+    .parent-logout-child form
+    {
+        width: 70%;
+        height: 100%;
+        left: 30%;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 32px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+@media(min-width:1400px)
+{
+    .parent-logout-child
+    {
+        height: 24rem;
+        width: 900px;
+    }
+    .parent-logout-child form
+    {
+        width: 70%;
+        height: 100%;
+        left: 30%;
+        gap: 22px;
+    }
+    .parent-logout-child form h1
+    {
+        font-size: 32px;
+        color: #0A0E3F;
+        text-align: center;
+    }
+    .parent-logout-child form .bt1
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .parent-logout-child form .bt2
+    {
+        width: 500px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+

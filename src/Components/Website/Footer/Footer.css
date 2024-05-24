@@ -1,0 +1,14 @@
+.foo
+{
+    width: 1550px;
+    background-color: #0A0E3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+.foo h1
+{
+    font-size: 33px;
+    color: white;
+}

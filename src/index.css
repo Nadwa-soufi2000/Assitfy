@@ -1,0 +1,16 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  overflow-x: hidden;
+  font-family: 'noor' , sans-serif;
+}
+@font-face {
+  font-family: 'noor';
+  src: url('./assets/fonts/alfont_com_AlFont_com_AGCBold-1.ttf');
+}

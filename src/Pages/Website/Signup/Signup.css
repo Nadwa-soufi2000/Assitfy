@@ -22,7 +22,7 @@
     border-radius: 20px;
     position: relative;
     width: 1180px;
-    height: 41rem;
+    height: 98%;
     opacity: 1;
 }
 .parent-signup .parent-signup-child form
@@ -782,7 +782,7 @@
     .parent-signup .parent-signup-child
     {
         width: 92%;
-        height: 41rem;
+        height: 98%;
     }
     .parent-signup .parent-signup-child form
     {
@@ -948,7 +948,7 @@
     .parent-signup .parent-signup-child
     {
         width: 90%;
-        height: 41rem;
+        height: 98%;
     }
     .parent-signup .parent-signup-child form
     {
@@ -1150,7 +1150,7 @@
     .parent-signup .parent-signup-child
     {
         width: 1180px;
-        height: 41rem;
+        height: 98%;
     }
     .parent-signup .parent-signup-child form
     {

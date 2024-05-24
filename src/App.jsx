@@ -12,10 +12,10 @@ function App() {
     <>
      <Routes>
          <Route path='/' element={<Home/>} ></Route>
-         <Route path='/login' element={<Login/>}></Route>
-         <Route path='/confirm' element={<Confirm/>}></Route>
-         <Route path='/signup' element={<Signup/>}></Route>
-         <Route path='/logout' element={<Logout/>}></Route>
+         <Route path='https://assitfy-nadwa-soufis-projects.vercel.app/login' element={<Login/>}></Route>
+         <Route path='https://assitfy-nadwa-soufis-projects.vercel.app/confirm' element={<Confirm/>}></Route>
+         <Route path='https://assitfy-nadwa-soufis-projects.vercel.app/signup' element={<Signup/>}></Route>
+         <Route path='https://assitfy-nadwa-soufis-projects.vercel.app/logout' element={<Logout/>}></Route>
      </Routes>
     </>
   )

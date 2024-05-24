@@ -53,7 +53,7 @@ export default function Signup()
                                 </div>
                             </div>
                             <button onSubmit={submit}>إنشاء حساب</button>
-                            <p><span className='acc'>لديك حساب ؟ </span><Link className='acc' to='https://assitfy-nadwa-soufis-projects.vercel.app/login'>تسجيل دخول</Link></p>
+                            <p><span className='acc'>لديك حساب ؟ </span><Link className='acc' to='/login'>تسجيل دخول</Link></p>
                         </div>
 
                         <div className='child2'>

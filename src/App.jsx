@@ -12,10 +12,10 @@ function App() {
     <>
      <Routes>
          <Route path='/' element={<Home/>} ></Route>
-         <Route path='/Assitfy/login' element={<Login/>}></Route>
-         <Route path='/Assitfy/confirm' element={<Confirm/>}></Route>
-         <Route path='/Assitfy/signup' element={<Signup/>}></Route>
-         <Route path='/Assitfy/logout' element={<Logout/>}></Route>
+         <Route path='/login' element={<Login/>}></Route>
+         <Route path='/confirm' element={<Confirm/>}></Route>
+         <Route path='/signup' element={<Signup/>}></Route>
+         <Route path='/logout' element={<Logout/>}></Route>
      </Routes>
     </>
   )

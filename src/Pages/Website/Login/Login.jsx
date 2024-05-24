@@ -34,7 +34,7 @@ export default function Login()
                     <button onClick={submit}>تسجيل دخول</button>
                     <div className="inner-div2">
                        <p style={{display:'flex' , justifyContent:'center' , alignItems:'center'}}><Link className='rou' to='/signup'>إنشاء حساب</Link><span className='rou'>   ليس لديك حساب؟</span></p>
-                        <p><Link to='/Assitfy/confirm' className='rou'>نسيت كلمة المرور</Link></p>
+                        <p><Link to='/confirm' className='rou'>نسيت كلمة المرور</Link></p>
                     </div>
                     <div className="inner-div3">
                         <span></span>

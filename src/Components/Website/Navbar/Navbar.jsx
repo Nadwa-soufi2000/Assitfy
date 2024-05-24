@@ -17,11 +17,11 @@ export default function Navbar()
     }
     function click1()
     {
-         window.location.pathname = '/login'
+         window.location.pathname = '/Assitfy/login'
     }
     function login()
     {
-        window.location.pathname ='/login'
+        window.location.pathname ='/Assitfy/login'
     }
     return(
        

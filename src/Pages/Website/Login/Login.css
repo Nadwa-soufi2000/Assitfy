@@ -21,7 +21,7 @@
     border-radius: 20px;
     position: relative;
     width: 1080px;
-    height: 34rem;
+    height: 78%;
     opacity: 0;
 }
 .inner-div form
@@ -186,11 +186,15 @@
 
 @media(max-width:567px)
 {
+    .parent-login
+    {
+        height: 700px;
+    }
     .parent-login .inner-div
     {
         position: relative;
         width: 86%;
-        height: 37rem;
+        height: 78%;
         opacity: 1;
     }
     .in1 label,
@@ -324,12 +328,16 @@
 }
 @media(min-width:567px)
 {
+    .parent-login
+    {
+        height: 700px;
+    }
             
       .parent-login .inner-div
       {
           position: relative;
           width: 60%;
-          height: 37rem;
+          height: 78%;
           opacity: 1;
       }
       .parent-login .inner-div form
@@ -456,11 +464,15 @@
 }
 @media(min-width:768px)
 {
+    .parent-login
+    {
+        height: 100%;
+    }
     .parent-login .inner-div
     {
         position: relative;
         width: 600px;
-        height: 34rem;
+        height: 78%;
         opacity: 1;
     }
     .parent-login .inner-div form
@@ -586,11 +598,15 @@
 }
 @media(min-width:992px)
 {
+    .parent-login
+    {
+        height: 100%;
+    }
     .parent-login .inner-div
     {
         position: relative;
         width: 960px;
-        height: 34rem;
+        height: 78%;
         opacity: 1;
     }
          
@@ -717,11 +733,15 @@
 }
 @media(min-width:1200px)
 {
+    .parent-login
+    {
+        height: 100%;
+    }
     .parent-login .inner-div
     {
         position: relative;
         width: 1080px;
-        height: 34rem;
+        height: 78%;
         opacity: 1;
     }
     .parent-login .inner-div form
@@ -846,11 +866,15 @@
 }
 @media(min-width:1400px)
 {
+    .parent-login
+    {
+        height: 100%;
+    }
     .parent-login  .inner-div
     {
         position: relative;
         width: 1080px;
-        height: 34rem;
+        height: 78%;
         opacity: 1;
     }
 

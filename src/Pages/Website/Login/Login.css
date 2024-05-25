@@ -21,7 +21,7 @@
     border-radius: 20px;
     position: relative;
     width: 1080px;
-    height: 78%;
+    height: 84%;
     opacity: 0;
 }
 .inner-div form
@@ -741,7 +741,7 @@
     {
         position: relative;
         width: 1080px;
-        height: 78%;
+        height: 84%;
         opacity: 1;
     }
     .parent-login .inner-div form
@@ -874,7 +874,7 @@
     {
         position: relative;
         width: 1080px;
-        height: 78%;
+        height: 84%;
         opacity: 1;
     }
 

@@ -1,8 +1,15 @@
 import './Confirm.css'
+import { easeOut, motion} from 'framer-motion'
 export default function Confirm()
 {
     return(
-        <div className='parent-confirm'>
+        <motion.div 
+         className='parent-confirm'
+         initial={{x:'100vw'}}
+         animate={{x:0}}
+         transition={{duration:1.2,  ease: [0.22, 1, 0.36, 1]}}
+         exit={{x:'100vw'}}
+        >
             <div className='par-con'>
                 <form>
                     <h1>...مرحبا بك</h1>
@@ -17,11 +24,11 @@ export default function Confirm()
                             <span></span>
                         </div>
                     </div>
-                        <button className='bb1'>تأكيد</button>
+                        <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb1'>تأكيد</motion.button>
                         <div className='secoP'>إذا لم يصلك الرمز يمكنك إعادة المحاولة بعد</div>
-                        <button className='bb2'>إعادة الإرسال</button>
+                        <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb2'>إعادة الإرسال</motion.button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }

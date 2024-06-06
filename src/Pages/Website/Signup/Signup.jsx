@@ -6,6 +6,7 @@ import google from './ImagesSignup/Google Logo.png'
 import facebook from './ImagesSignup/Facebook Logo.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import { easeOut, motion} from 'framer-motion'
 export default function Signup()
 {
     const[picture1 , setPicture1] = useState();
@@ -28,7 +29,13 @@ export default function Signup()
         form.append('confirmPassword' , confirmPassword);  
      }
     return(
-        <div className='parent-signup'>
+        <motion.div 
+         className='parent-signup'
+         initial={{x:'100vw'}}
+         animate={{x:0}}
+         transition={{duration:1.2, ease: [0.22, 1, 0.36, 1]}}
+         exit={{x:'100vw'}}
+        >
             <div className='parent-signup-child'>
                 <form>
                     <h1>إنشاء حساب</h1>
@@ -52,7 +59,7 @@ export default function Signup()
                                      <p>1MB الحجم الأقصى</p>
                                 </div>
                             </div>
-                            <button onSubmit={submit}>إنشاء حساب</button>
+                            <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} onSubmit={submit}>إنشاء حساب</motion.button>
                             <p><span className='acc'>لديك حساب ؟ </span><Link className='acc' to='/login'>تسجيل دخول</Link></p>
                         </div>
 
@@ -97,6 +104,6 @@ export default function Signup()
                     </div>
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }

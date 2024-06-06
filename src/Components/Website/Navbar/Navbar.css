@@ -81,13 +81,14 @@ nav .parent2 .listt li
 nav .parent2 .listt.active
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex-direction: column;
     list-style: none;
-    width: 190px;
+    width: 234px;
     height: 100%;
     gap: 26px;
+    
 }
  nav .parent2 .listt.active li 
 {

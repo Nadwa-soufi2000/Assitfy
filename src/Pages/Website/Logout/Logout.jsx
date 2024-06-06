@@ -4,15 +4,15 @@ export default function Logout()
 {
     function check1()
     {
-       window.localStorage.setItem('logout' , '!LogoutButton');
-       window.location.pathname = '/'
+       localStorage.setItem('logout' , '!LogoutButton');
+       location.pathname = '/'
     }
 
     function check2()
     {
-        window.localStorage.setItem('logout' , 'LogoutButton');
-        window.localStorage.setItem('click' , 'no');
-        window.location.pathname = '/'
+        localStorage.setItem('logout' , 'LogoutButton');
+        localStorage.setItem('click' , 'no');
+        location.pathname = '/'
     }
     return(
         <div className='parent-logout'>

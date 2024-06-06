@@ -1,25 +1,36 @@
 import apple from './ImagesLogin/Apple Logo.png'
 import google from './ImagesLogin/Google Logo.png'
 import facebook from './ImagesLogin/Facebook Logo.png'
+import { easeOut, motion} from 'framer-motion'
 import './Login.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link , useNavigate} from 'react-router-dom'
 import { useState } from 'react'
+
+
 
 export default function Login()
 {
     const nav = useNavigate();
     const[email , setEmail] = useState();
     const[password , setPassword] = useState();
-   window.localStorage.clear()
-
-   async function submit()
+   
+    
+    localStorage.clear()
+     
+    function submit()
     {
-        window.localStorage.setItem('logout' , 'LogoutButton');
+        localStorage.setItem('logout' , 'LogoutButton');
         nav('/');
     }
     
     return(
-        <div className="parent-login">
+        <motion.div 
+         className="parent-login"
+         initial={{x:'100vw'}}
+         animate={{x:0}}
+         transition={{duration:1.2,  ease: [0.22, 1, 0.36, 1]}}
+         exit={{x:'100vw'}}
+        >
             <div className="inner-div">
                 <form>
                     <h1>تسجيل دخول</h1>
@@ -31,7 +42,7 @@ export default function Login()
                         <label htmlFor="2">كلمة المرور</label>
                         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' id="2"/>
                     </div>
-                    <button onClick={submit}>تسجيل دخول</button>
+                    <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}}  onClick={submit} >تسجيل دخول</motion.button>
                     <div className="inner-div2">
                        <p style={{display:'flex' , justifyContent:'center' , alignItems:'center'}}><Link className='rou' to='/signup'>إنشاء حساب</Link><span className='rou'>   ليس لديك حساب؟</span></p>
                         <p><Link to='/confirm' className='rou'>نسيت كلمة المرور</Link></p>
@@ -59,6 +70,6 @@ export default function Login()
                 </form>
             </div>
             
-        </div>
+        </motion.div>
     )
 }

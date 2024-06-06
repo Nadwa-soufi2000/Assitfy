@@ -1,8 +1,11 @@
+
 import logo from './ImagesNavbar/Group.jpg'
 import './Navbar.css'
 export default function Navbar()
 {
-    let varw = window.localStorage.getItem('logout');
+   
+   let varw = localStorage.getItem('logout');
+
     function show()
     {
         let listElements = document.querySelector('.listt');
@@ -12,16 +15,17 @@ export default function Navbar()
     }
     function click()
     {
-        window.localStorage.setItem('click' , 'yes');
-        window.location.pathname='/'
+        
+           localStorage.setItem('click' , 'yes');
+           location.pathname='/'
     }
     function click1()
     {
-         window.location.pathname ='/login'
+         location.pathname ='/login'
     }
     function login()
     {
-        window.location.pathname ='/login'
+        location.pathname ='/login'
     }
     return(
        
@@ -30,7 +34,7 @@ export default function Navbar()
             <div className="log-sign">
                 <button  className="b1">ابدأ</button> 
                 {
-                    varw === "LogoutButton" ?
+                      varw === "LogoutButton" ?
                     <button onClick={click} className="b2">تسجيل خروج</button>
                     :
                     <button onClick={click1} className="b2">تسجيل دخول</button>

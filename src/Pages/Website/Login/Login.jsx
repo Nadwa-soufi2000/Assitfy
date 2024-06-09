@@ -15,11 +15,12 @@ export default function Login()
     const[password , setPassword] = useState();
    
     
-    localStorage.clear()
+    //localStorage.clear()
      
     function submit()
     {
         localStorage.setItem('logout' , 'LogoutButton');
+        console.log('Hello');
         nav('/');
     }
     

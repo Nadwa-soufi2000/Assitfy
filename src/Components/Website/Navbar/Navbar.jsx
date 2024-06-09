@@ -5,6 +5,7 @@ export default function Navbar()
 {
    
    let varw = localStorage.getItem('logout');
+   localStorage.removeItem('click');
 
     function show()
     {

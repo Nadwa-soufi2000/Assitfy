@@ -4,11 +4,14 @@ import '../../../Components/Website/Media/MediaQuires.css'
 import apple from './ImagesSignup/Apple Logo.png'
 import google from './ImagesSignup/Google Logo.png'
 import facebook from './ImagesSignup/Facebook Logo.png'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useContext, useState } from 'react'
 import { easeOut, motion} from 'framer-motion'
+import axios from 'axios'
+import { User } from '../../../Components/Website/ContextApi/ContextApi'
 export default function Signup()
 {
+    const nav = useNavigate();
     const[picture1 , setPicture1] = useState();
     const[picture2 , setPicture2] = useState();
     const[Email , setemail] = useState();
@@ -16,17 +19,34 @@ export default function Signup()
     const[phone , setPhone] = useState();
     const[Password , setpassword] = useState();
     const[confirmPassword , setconfirmPassword] = useState();
-
-     async function submit()
+    console.log(picture1)
+     const user = useContext(User);
+     async function submit(e)
      {
+        e.preventDefault();
         const form = new FormData();
-        form.append('picture1' , picture1);
-        form.append('picture2' , picture2);
+        form.append('username' , userName);
+        form.append('phone_number' , phone);
         form.append('email' , Email);
-        form.append('userName' , userName);
-        form.append('phone' , phone);
         form.append('password' , Password) ;
-        form.append('confirmPassword' , confirmPassword);  
+        form.append('password_confirmation' , confirmPassword); 
+        form.append('profile_photo' , picture1);
+        form.append('certificate' , picture2);
+        try {
+            let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/signup" , 
+                form)
+                console.log(response)
+                const token = response.data.token;
+                console.log(token)
+                const userDetials = response.data.data;
+                localStorage.setItem('id' , response.data.data.id)
+                localStorage.setItem('name' , response.data.data.username)
+                user.setAuth( {token , userDetials} );
+                console.log(user.auth)
+                nav('/confirm')
+        } catch(err) {
+            console.log(err)
+        }
      }
     return(
         <motion.div 
@@ -37,29 +57,29 @@ export default function Signup()
          exit={{x:'100vw'}}
         >
             <div className='parent-signup-child'>
-                <form>
+                <form onSubmit={submit}>
                     <h1>إنشاء حساب</h1>
                     <div className='parent-childs'>
                         <div className='child1'>
                             <div className='com1'>
                                 <label className='th-la1'>الصورة الشخصية</label>
                                 <div className='com1-ch'>
-                                     <input id='co1' type='file'/>
+                                     <input onChange={(e) =>setPicture1(e.target.files[0])} id='co1' type='file'/>
                                      <label htmlFor='co1' className='th-la'>اسحب وأفلت الصورة هنا أو قم برفعها من الملفات</label>
-                                     <img onChange={(e) => setPicture1(e.target.files)} src={upload} alt=' '/>
+                                     <img src={upload} alt=' '/>
                                      <p>2MB الحجم الأقصى</p>
                                 </div>
                             </div>
                             <div className='com2'>
                                 <label className='th-la2'>إثبات الشخصية</label>
                                 <div className='com2-ch'>
-                                     <input id='co2' type='file'/>
+                                     <input onChange={(e) => setPicture2(e.target.files[0])} id='co2' type='file'/>
                                      <label htmlFor='co2' className='th-la3'>اسحب وأفلت الصورة هنا أو قم برفعها من الملفات</label>
-                                     <img onChange={(e) => setPicture2(e.target.files)} src={upload} alt=' '/>
+                                     <img  src={upload} alt=' '/>
                                      <p>1MB الحجم الأقصى</p>
                                 </div>
                             </div>
-                            <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} onSubmit={submit}>إنشاء حساب</motion.button>
+                            <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} >إنشاء حساب</motion.button>
                             <p><span className='acc'>لديك حساب ؟ </span><Link className='acc' to='/login'>تسجيل دخول</Link></p>
                         </div>
 

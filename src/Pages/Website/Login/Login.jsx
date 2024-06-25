@@ -4,7 +4,9 @@ import facebook from './ImagesLogin/Facebook Logo.png'
 import { easeOut, motion} from 'framer-motion'
 import './Login.css'
 import { Link , useNavigate} from 'react-router-dom'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import axios from 'axios'
+import { User } from '../../../Components/Website/ContextApi/ContextApi'
 
 
 
@@ -12,16 +14,42 @@ export default function Login()
 {
     const nav = useNavigate();
     const[email , setEmail] = useState();
+    const[number , setNumber] = useState();
     const[password , setPassword] = useState();
-   
+    const  user = useContext(User);
     
     //localStorage.clear()
      
-    function submit()
+   async function submit(e)
     {
-        localStorage.setItem('logout' , 'LogoutButton');
-        console.log('Hello');
-        nav('/');
+         e.preventDefault();
+         
+         const form = new FormData()
+         form.append("email" , email)
+         form.append("password" ,password)
+         form.append("phone_number" , number)
+         try {
+            let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/login" ,
+                form ,
+                {
+                    headers : {
+                        "Content-Type" : "application/json",
+                        "Accept" :"application/json"
+                    }
+                }
+            )
+            console.log(response);
+            localStorage.setItem('logout' , 'LogoutButton');
+            const token = response.data.data.token;
+            const userDetials = response.data.data;
+            user.setAuth( {token , userDetials} );
+            nav('/');
+
+         }catch(err) 
+         {
+            console.log(err)
+         }
+         
     }
     
     return(
@@ -33,17 +61,21 @@ export default function Login()
          exit={{x:'100vw'}}
         >
             <div className="inner-div">
-                <form>
+                <form onSubmit={submit}>
                     <h1>تسجيل دخول</h1>
                     <div className='in1'>
-                        <label htmlFor="1">الإيميل  أو رقم الهاتف</label>
+                        <label htmlFor="1">الإيميل</label>
                         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" id='1'/>
+                    </div>
+                    <div className='in1'>
+                        <label htmlFor="3"> رقم الهاتف</label>
+                        <input value={number} onChange={(e) => setNumber(e.target.value)} type="text" id='3'/>
                     </div>
                     <div className='in2'>
                         <label htmlFor="2">كلمة المرور</label>
                         <input value={password} onChange={(e) => setPassword(e.target.value)} type='password' id="2"/>
                     </div>
-                    <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}}  onClick={submit} >تسجيل دخول</motion.button>
+                    <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} >تسجيل دخول</motion.button>
                     <div className="inner-div2">
                        <p style={{display:'flex' , justifyContent:'center' , alignItems:'center'}}><Link className='rou' to='/signup'>إنشاء حساب</Link><span className='rou'>   ليس لديك حساب؟</span></p>
                         <p><Link to='/confirm' className='rou'>نسيت كلمة المرور</Link></p>

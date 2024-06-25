@@ -1,11 +1,29 @@
 
+import axios from 'axios';
 import './Logout.css'
+import { useContext } from 'react';
+import { User } from '../../../Components/Website/ContextApi/ContextApi';
 export default function Logout()
 {
-    function check1()
+    const user = useContext(User);
+    const token = user.auth.token;
+   async function check1()
     {
-       localStorage.setItem('logout' , '!LogoutButton');
-       location.pathname = '/'
+        try{
+            let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/logout" , {} ,
+                {
+                    headers : {
+                        Authorization : "Bearer " + token ,
+                        "Accept" :"application/json"
+                    }
+                }
+            )
+             console.log(response)
+             localStorage.setItem('logout' , '!LogoutButton');
+             location.pathname = '/'
+        }catch(err) {
+            console.log(err)
+        }
     }
 
     function check2()

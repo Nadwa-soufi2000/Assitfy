@@ -4,12 +4,14 @@ import Navbar from "../../../Components/Website/Navbar/Navbar";
 import './Home.css'
 import '../../../Components/Website/Media/MediaQuires.css'
 import Logout from "../Logout/Logout";
+
 //import { useEffect, useState } from "react";
 
 export default function Home()
 {
     let vare = localStorage.getItem('logout');
     let vare2 = localStorage.getItem('click');
+   
     return(
         <div style={{position:'relative', height:'100%'}}> 
 

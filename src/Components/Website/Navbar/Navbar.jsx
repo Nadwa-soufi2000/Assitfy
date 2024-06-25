@@ -1,9 +1,12 @@
 
+import { useContext } from 'react';
 import logo from './ImagesNavbar/Group.jpg'
 import './Navbar.css'
+import { User } from '../ContextApi/ContextApi';
 export default function Navbar()
 {
-   
+    const user = useContext(User);
+    const token = user.auth.token;
    let varw = localStorage.getItem('logout');
    localStorage.removeItem('click');
 
@@ -35,7 +38,7 @@ export default function Navbar()
             <div className="log-sign">
                 <button  className="b1">ابدأ</button> 
                 {
-                      varw === "LogoutButton" ?
+                      varw === "LogoutButton" && token ?
                     <button onClick={click} className="b2">تسجيل خروج</button>
                     :
                     <button onClick={click1} className="b2">تسجيل دخول</button>

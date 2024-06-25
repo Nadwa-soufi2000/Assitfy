@@ -121,7 +121,10 @@
 {
     width: 100%;
     height: 100%;
-    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: -1;
 }
 .parent-signup .parent-signup-child form .parent-childs .child1 .com1 .com1-ch .th-la,
 .parent-signup .parent-signup-child form .parent-childs .child1 .com2 .com2-ch .th-la3

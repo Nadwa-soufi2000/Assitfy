@@ -3,19 +3,19 @@ import Footer from "../../../Components/Website/Footer/Footer";
 import Navbar from "../../../Components/Website/Navbar/Navbar";
 import './Home.css'
 import '../../../Components/Website/Media/MediaQuires.css'
-import Logout from "../Logout/Logout";
+//import Logout from "../Logout/Logout";
 
 //import { useEffect, useState } from "react";
 
 export default function Home()
 {
-    let vare = localStorage.getItem('logout');
-    let vare2 = localStorage.getItem('click');
+  //  let vare = localStorage.getItem('logout');
+   // let vare2 = localStorage.getItem('click');
    
     return(
         <div style={{position:'relative', height:'100%'}}> 
 
-           { vare === 'LogoutButton' && vare2 === 'yes' && <Logout/>}
+           { /*vare === 'LogoutButton' && vare2 === 'yes' && <Logout/>*/}
            
             <Navbar/>
             <div className="pSec2">

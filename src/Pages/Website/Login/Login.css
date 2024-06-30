@@ -251,6 +251,7 @@
     {
         justify-content: space-between;
         flex-direction: column;
+        gap: 4px;
         width: 100%;
         height: 140px;
     }
@@ -741,7 +742,7 @@
     {
         position: relative;
         width: 1080px;
-        height: 88%;
+        height: 90%;
         opacity: 1;
     }
     .parent-login .inner-div form
@@ -874,7 +875,7 @@
     {
         position: relative;
         width: 1080px;
-        height: 88%;
+        height: 90%;
         opacity: 1;
     }
 

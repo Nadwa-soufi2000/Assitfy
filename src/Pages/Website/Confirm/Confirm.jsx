@@ -3,6 +3,8 @@ import './Confirm.css'
 import { easeOut, motion} from 'framer-motion'
 import axios from 'axios';
 import { User } from '../../../Components/Website/ContextApi/ContextApi';
+import { useNavigate } from 'react-router-dom';
+import Cookies from 'universal-cookie';
 export default function Confirm()
 {
     const[char1 , setCharOne] = useState();
@@ -13,11 +15,13 @@ export default function Confirm()
     const[char6 , setCharSix] = useState();
     const user = useContext(User);
     const token = user.auth.token;
+    const cookie = new Cookies();
+    const getrefreshToken = cookie.get("Bearer2")
     const Userid = localStorage.getItem('id')
+   // const Useremail = localStorage.getItem('email');
     console.log(Userid)
     console.log(token);
-    console.log(char1);
-
+    const nav = useNavigate();
     async function confirm(e)
     {
        
@@ -30,17 +34,54 @@ export default function Confirm()
         try {
               let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/email/verify" ,  form , {
                     headers : {
-                         "Content-Type": "multipart/form-data",
-                          Authorization: "Bearer " + token   
+                         "Content-Type" : "application/json" ,
+                         "Accept": "application/json" ,
                     },
                 }
                 )
                 console.log(response);
+                localStorage.setItem('logout' , 'LogoutButton');
+                user.setAuth((prev) => {
+                    return {...prev, token: getrefreshToken}
+                })
+                nav('/')
         }catch(err) {
             console.log(err)
         }
     }
+      async function Retry()
+         {
+           try {
+                let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/email/verification",{},
+                {
+                    headers : {
+                        "Content-Type" : "application/json" ,
+                        "Accept" : "application/json" 
+                    }
+                })
+                console.log(response)
+             }catch(err)
+             {
+               console.log(err)
+             }
+       }
    
+       async function deleteUser()
+       {
+         try {
+               let response = await axios.delete("https://task5-rama-eisawi.trainees-mad-s.com/api/users/177" ,
+                {
+                    headers : {
+                        "Content-Type" : "application/json"
+                    }
+                }
+               )
+               console.log(response)
+         } catch(err)
+         {
+            console.log(err)
+         }
+       }
     
     return(
         <motion.div 
@@ -48,7 +89,7 @@ export default function Confirm()
          initial={{x:'100vw'}}
          animate={{x:0}}
          transition={{duration:1.2,  ease: [0.22, 1, 0.36, 1]}}
-         exit={{x:'100vw'}}
+        // exit={{x:'100vw'}}
         >
             <div className='par-con'>
                 <form onSubmit={confirm}>
@@ -67,9 +108,10 @@ export default function Confirm()
                     </div>
                         <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb1' >تأكيد</motion.button>
                         <div className='secoP'>إذا لم يصلك الرمز يمكنك إعادة المحاولة</div>
-                        <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb2' >إعادة الإرسال</motion.button>
+                        <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb2' onClick={Retry} >إعادة الإرسال</motion.button>
                 </form>
             </div>
+            <button onClick={deleteUser}>delete</button>
         </motion.div>
     )
 }

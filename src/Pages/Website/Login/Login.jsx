@@ -7,6 +7,7 @@ import { Link , useNavigate} from 'react-router-dom'
 import { useContext, useState } from 'react'
 import axios from 'axios'
 import { User } from '../../../Components/Website/ContextApi/ContextApi'
+import Cookies from 'universal-cookie'
 
 
 
@@ -17,7 +18,8 @@ export default function Login()
     const[number , setNumber] = useState();
     const[password , setPassword] = useState();
     const  user = useContext(User);
-    
+    const cookie = new Cookies();
+    const cookie2 = new Cookies();
     //localStorage.clear()
      
    async function submit(e)
@@ -40,9 +42,16 @@ export default function Login()
             )
             console.log(response);
             localStorage.setItem('logout' , 'LogoutButton');
-            const token = response.data.data.token;
+            const token = response.data.token;
+            const refreshToken = response.data.refresh_token;
             const userDetials = response.data.data;
+          //localStorage.setItem('access' , token);
+          //localStorage.setItem('name' , response.data.data.name)
+            console.log(token)
+            console.log(refreshToken)
             user.setAuth( {token , userDetials} );
+            cookie.set("Bearer" , token)
+            cookie2.set("Bearer2" , refreshToken);
             nav('/');
 
          }catch(err) 
@@ -58,7 +67,7 @@ export default function Login()
          initial={{x:'100vw'}}
          animate={{x:0}}
          transition={{duration:1.2,  ease: [0.22, 1, 0.36, 1]}}
-         exit={{x:'100vw'}}
+         //exit={{x:'100vw'}}
         >
             <div className="inner-div">
                 <form onSubmit={submit}>

@@ -9,6 +9,7 @@ import { useContext, useState } from 'react'
 import { easeOut, motion} from 'framer-motion'
 import axios from 'axios'
 import { User } from '../../../Components/Website/ContextApi/ContextApi'
+import Cookies from 'universal-cookie'
 export default function Signup()
 {
     const nav = useNavigate();
@@ -21,6 +22,7 @@ export default function Signup()
     const[confirmPassword , setconfirmPassword] = useState();
     console.log(picture1)
      const user = useContext(User);
+     const cookie = new Cookies();
      async function submit(e)
      {
         e.preventDefault();
@@ -29,9 +31,9 @@ export default function Signup()
         form.append('phone_number' , phone);
         form.append('email' , Email);
         form.append('password' , Password) ;
-        form.append('password_confirmation' , confirmPassword); 
+        form.append('password_confirmation' , confirmPassword);
         form.append('profile_photo' , picture1);
-        form.append('certificate' , picture2);
+        form.append('certificate' , picture2); 
         try {
             let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/signup" , 
                 form)
@@ -41,7 +43,9 @@ export default function Signup()
                 const userDetials = response.data.data;
                 localStorage.setItem('id' , response.data.data.id)
                 localStorage.setItem('name' , response.data.data.username)
+                const refreshToken = response.data.refresh_token;
                 user.setAuth( {token , userDetials} );
+                cookie.set("Bearer2" , refreshToken)
                 console.log(user.auth)
                 nav('/confirm')
         } catch(err) {
@@ -54,7 +58,7 @@ export default function Signup()
          initial={{x:'100vw'}}
          animate={{x:0}}
          transition={{duration:1.2, ease: [0.22, 1, 0.36, 1]}}
-         exit={{x:'100vw'}}
+         //exit={{x:'100vw'}}
         >
             <div className='parent-signup-child'>
                 <form onSubmit={submit}>

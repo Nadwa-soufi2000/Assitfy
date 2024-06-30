@@ -3,12 +3,17 @@ import { useContext } from 'react';
 import logo from './ImagesNavbar/Group.jpg'
 import './Navbar.css'
 import { User } from '../ContextApi/ContextApi';
+import axios from 'axios';
+import Cookies from 'universal-cookie';
 export default function Navbar()
 {
     const user = useContext(User);
     const token = user.auth.token;
+    //const token2 = localStorage.getItem('access')
    let varw = localStorage.getItem('logout');
    localStorage.removeItem('click');
+   const cookie2 = new Cookies()
+   const getrefreshToken = cookie2.get("Bearer2")
 
     function show()
     {
@@ -17,11 +22,30 @@ export default function Navbar()
         let togg = document.querySelector('.togg');
         togg.classList.toggle('show');
     }
-    function click()
+   async function click()
     {
         
-           localStorage.setItem('click' , 'yes');
-           location.pathname='/'
+         //  localStorage.setItem('click' , 'yes');
+         //  location.pathname='/'
+           try{
+            let response = await axios.post("https://task5-rama-eisawi.trainees-mad-s.com/api/auth/logout", {} ,
+                {
+                    headers : { 
+                        Authorization : "Bearer " +  getrefreshToken ,
+                        "Content-Type" : "application/json",
+                        "Accept" : "application/json",
+                    }
+                }
+            )
+             console.log(response)
+             console.log("Hello")
+             localStorage.setItem('logout' , '!LogoutButton');
+             localStorage.setItem('click' , 'yes')
+             alert("Logout Successfully")
+             location.pathname = '/'
+        }catch(err) {
+            console.log(err)
+        }
     }
     function click1()
     {
@@ -61,7 +85,7 @@ export default function Navbar()
                <li>حول</li>
               <li>العقارات</li> 
               {    
-                     varw === 'LogoutButton' ?
+                     varw === 'LogoutButton' && token  ? 
                      <li onClick={click} className='togg'>تسجيل خروج</li>
                      :
                      <li onClick={login} className='togg'>تسجيل دخول</li>

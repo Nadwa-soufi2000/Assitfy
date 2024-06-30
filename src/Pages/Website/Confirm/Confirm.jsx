@@ -65,23 +65,6 @@ export default function Confirm()
                console.log(err)
              }
        }
-   
-       async function deleteUser()
-       {
-         try {
-               let response = await axios.delete("https://task5-rama-eisawi.trainees-mad-s.com/api/users/177" ,
-                {
-                    headers : {
-                        "Content-Type" : "application/json"
-                    }
-                }
-               )
-               console.log(response)
-         } catch(err)
-         {
-            console.log(err)
-         }
-       }
     
     return(
         <motion.div 
@@ -111,7 +94,6 @@ export default function Confirm()
                         <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:3 , ease:easeOut}} className='bb2' onClick={Retry} >إعادة الإرسال</motion.button>
                 </form>
             </div>
-            <button onClick={deleteUser}>delete</button>
         </motion.div>
     )
 }
